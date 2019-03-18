@@ -1,10 +1,11 @@
 import React from 'react';
 import Auxi from '../../hoc/Auxi';
 import classes from './Layout.css';
+import Toolbar from '../Navigation/Toolbar/Toolbar';
 
 const Layout = (props) => (
     <Auxi>
-        <div>Toolbar, Sidedrawer, Backdrop </div>
+       <Toolbar />
         <main className={ classes.Content }>
             { props.children }
         </main>
